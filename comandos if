@@ -1,0 +1,49 @@
+//Punto uno
+package com.example.demo2;
+
+public class Main{
+    public static void main(String[] args ) {
+        int Numero = -1;
+        if (Numero < 0){
+          ;System.out.println("Negativo");
+        }
+         else if(Numero>0){
+        System.out.println("Positivo");
+    } else {
+        System.out.println("Es 0");
+    }}}
+//Punto dos
+int numeroWhile = 1;
+        while (numeroWhile < 3) {
+            numeroWhile = numeroWhile +1;
+            System.out.println(numeroWhile);
+        }
+//Punto tres
+        int numeroWhile = 3;
+       do {
+           System.out.println(numeroWhile+1);
+            }
+       while (numeroWhile < 3);
+//Punto cuatro
+ for (int numeroFor = 0; numeroFor <=3;
+           numeroFor=numeroFor+1)
+       {System.out.println(numeroFor); };
+//Quinta parte
+var estacion ="Otoño";
+       switch (estacion){
+           case "Verano":
+               System.out.println("Es Verano");
+               break;
+           case "Otoño":
+               System.out.println("Es Otoño");
+               break;
+           case "Primavera":
+               System.out.println("Es Primavera");
+               break;
+           case "Invierno":
+               System.out.println("Es Invierno");
+               break;
+           default:
+               System.out.println("No es una estacion");
+      
+    
