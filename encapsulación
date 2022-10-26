@@ -1,0 +1,33 @@
+package com.example.demo3;
+
+public class Main  {
+    public static void main(String [] args){
+        Persona persona = new Persona();
+        persona.setInfo(50);
+        persona.setNombre("Pedro vazquez");
+        System.out.println("Edad: " + persona.getInfo());
+        System.out.println("Nombre: " + persona.getNombre());
+
+        Persona Telefono = new Persona();
+        Telefono.setInfo(45645745);
+        System.out.println("Telefono: " + Telefono.getInfo());
+                  }
+}
+class Persona {
+    private int info;
+    private String nombre;
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getNombre(){
+        return this.nombre;
+    }
+    public void setInfo(int info) {
+        this.info= info;
+    }
+    public int getInfo(){
+        return this.info;
+
+            }
+    }
