@@ -1,16 +1,29 @@
+package com.example.demo3;
+
 public class Main  {
     public static void main(String [] args){
         Cliente cliente = new Cliente();
-        cliente.setCredito(5000);
-        cliente.setEdad(24);
-        cliente.setTelefono(238746872);
-        cliente.setNombre("Calderon");
+        cliente.setCredito(43333);
+        cliente.setEdad(84);
+        cliente.setTelefono(3423423);
+        cliente.setNombre("Pedro Sanchez");
 
+        System.out.println("Nombre Cliente: " + cliente.getNombre());
         System.out.println("Edad: " + cliente.getEdad()+" años");
-        System.out.println("Nombre: " + cliente.getNombre());
         System.out.println("Credito de: " + cliente.getCredito() + " euros");
         System.out.println("Telefono: " + cliente.getTelefono());
-          }
+
+        Trabajador trabajador =new Trabajador();
+        trabajador.setEdad(24);
+        trabajador.setTelefono(238746872);
+        trabajador.setNombre("Calderon");
+        trabajador.setSalario(899);
+
+        System.out.println("Nombre Trabajador: " + trabajador.getNombre());
+        System.out.println("Edad: " + trabajador.getEdad()+" años");
+        System.out.println("Telefono: " + trabajador.getTelefono());
+        System.out.println("Salario: " + trabajador.getSalario()+" euros");
+              }
 }
 class Persona {
     int edad;
@@ -42,22 +55,4 @@ class Trabajador extends Persona {
     int salario;
     public void setSalario(int salario){this.salario = salario;}
     public int getSalario(){return this.salario;}
-}
-
-public class Main  {
-    public static void main(String [] args){
-        Trabajador trabajador = new Trabajador();
-        //trabajador.setCredito(5000);
-        trabajador.setEdad(24);
-        trabajador.setTelefono(238746872);
-        trabajador.setNombre("Calderon");
-        trabajador.setSalario(899);
-
-        System.out.println("Edad: " + trabajador.getEdad()+" años");
-        System.out.println("Nombre: " + trabajador.getNombre());
-        //System.out.println("Credito de: " + trabajador.getCredito() + " euros");
-        System.out.println("Telefono: " + trabajador.getTelefono());
-        System.out.println("Salario: " + trabajador.getSalario()+" euros");
-
-              }
 }
