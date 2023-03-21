@@ -1,0 +1,2 @@
+for i in reversed(rango_1_100):
+...     print(f"- {i}")
