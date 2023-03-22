@@ -1,0 +1,12 @@
+class Coche:
+    velocidad = '50' + ' km/h'
+    cilindrada = ''
+
+class Vehiculo:
+    color = 'de color '+'rojo'
+    ruedas = 'tiene' + ' 4' +' ruedas'
+    puertas = 'tiene' + ' 4' +' puertas'
+    coche = Coche()
+
+c = Vehiculo()
+print("Vehiculo", c.coche.velocidad)
